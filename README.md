@@ -35,4 +35,3 @@ Export Directory
 ## Notes
 - Errors that look like the following can generally be ignored. They are usually a result of a deleted page or an outlook attachment/task: ![image](https://user-images.githubusercontent.com/10717998/132024369-ec7a51e4-be6b-4d7e-855f-d803126c4eda.png)
 - Page names containing invalid file/directory charachters are replaced with an underscore: `10_00am.htm` replaces `10:00am`
-- Currently PDF attachments are not being saved to the `_files` subdirectory, but rather too the same directory of the page they were attached to.
