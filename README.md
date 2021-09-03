@@ -11,15 +11,14 @@ The output of [onenote-powershell-html-export.ps1](onenote-powershell-html-expor
 
 ```
 Export Directory
-└── Notebook
-    └── Section
+└── notebook
+    └── section
         ├── page.htm
-        ├── Page
+        ├── page
             ├── sub-page.htm
-            └── Subpage
+            └── sub-page
                 └── sub-sub-page.htm
-        └── Page_files
-            └── Page_files
-                └── file.png
+        └── page_files
+            └── file.png
 ...
 ```
