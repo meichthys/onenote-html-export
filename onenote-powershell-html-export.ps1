@@ -77,7 +77,8 @@ Function Export-OneNote-Page {
     Write-Host "    Page: $($file)"
     # Export
     $onenote.Publish($node.ID, $file, 7, "")
-    Export-OneNote-Attachments -onenote $onenote -node $node -path $path
+	$attachmentpath = Join-Path -Path $path -ChildPath ($child.Name + "_files")
+    Export-OneNote-Attachments -onenote $onenote -node $node -path $attachmentpath
 }
 
 # Copy embedded attachments
@@ -116,3 +117,6 @@ foreach ($notebook in $Hierarchy.Notebooks.Notebook ) {
     New-Item -Path $nf -ItemType directory | Out-Null
     Spider-OneNote-Notebook -onenote $OneNote -node $notebook -path $nf
 }
+
+# Cleanup filelist.xml files
+Get-ChildItem -path $folder filelist.xml -Recurse | foreach { Remove-Item -Path $_.FullName }
