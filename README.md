@@ -27,6 +27,8 @@ Export Directory
 - Have powershell installed
 - Open Onenote Desktop (Only Microsoft Office Versions of Onenote are supported by this script)
   - Import notebooks if exported from OneNote web version
+- Make sure every page contains only a single 'canvas'
+    - Multiple canvases per page are not supported and may result in weird formatting or missing data
 - Run the powershell script: `onenote-powershell-html-export.ps1`
   - Select your export directory.
   - Watch yourself exit Microsoft's walled garden
