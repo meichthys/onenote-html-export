@@ -1,7 +1,7 @@
 # Onenote Html Export
 Exports local onenote notebooks in html directory format. I've personally used the resulting files to import into Trilium Notes with good success.
 
-| :exclamation:  Note: If you want to convert an online notebook, import it into your Microsoft Office version of Onenote first. |
+| :exclamation:  Note: If you want to convert an online notebook, import it into your Desktop version of Microsoft Office Onenote first. |
 |--------------------------------------------------------------------------------------------------------------------------------|
 
 The bulk of the code was taken from [@passbe](https://github.com/passbe)'s [blog post](https://passbe.com/2019/08/01/bulk-export-onenote-2013-2016-pages-as-html/).
